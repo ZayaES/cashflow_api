@@ -77,8 +77,6 @@ router.get('/api/bank-reconciliation', async (req, res) => {
         AND reconciled = FALSE
     `, [companyid, bankaccount]);
 
-    console.log('Unreconciled Transactions:', unreconciled.rows);
-
     const ledgerBalance = 22500;
     const bankStatementBalance = 19000;
 
